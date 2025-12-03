@@ -30,13 +30,12 @@ app.post("/send-alert", async (req, res) => {
     to: receiverEmail,   // <-- DYNAMIC RECEIVER EMAIL
     subject: "Camera (Lake View) - Animal Alert",
     text: `
-⚠️ ALERT: Animal Detected Near Lake
+    ⚠️ ALERT: Animal Detected Near Lake
 
-Detected: ${classesList}
-Model Original Class: ${original}
-Tracked Duration: ${duration.toFixed(1)} seconds
+    Detected: ${classesList}
+    Tracked Duration: ${duration.toFixed(1)} seconds
 
-Stay alert!
+    Stay alert!
     `,
   };
 
